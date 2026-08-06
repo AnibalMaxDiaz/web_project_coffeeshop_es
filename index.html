@@ -66,44 +66,63 @@
           action="https://formspree.io/f/mnqvydqv"
           method="POST"
         >
-          <fieldset class="form__fieldset">
-            <label for="form__label form__name">Nombre *</label>
+          <fieldset class>
+            <label for="form__name" class="form__label">Nombre *</label>
             <input
               class="form__input"
               type="text"
               id="form__name"
-              name="reserva"
+              name="reservation"
               placeholder="Nombre"
               required
             />
-            <label for="form__label form__guests">Número de comensales *</label>
+            <label for="form__guests" class="form__label"
+              >Número de comensales *</label
+            >
             <input
               class="form__input"
               type="number"
               id="form__guests"
-              name="reserva"
+              name="reservation"
               placeholder="1-8"
               min="1"
+              max="8"
               required
             />
-            <label for="form__label form__date">Fecha y hora *</label>
+            <label for="form__date" class="form__label">Fecha y hora *</label>
             <input
               class="form__input"
               type="datetime-local"
               id="form__date"
-              name="reserva"
+              name="reservation"
               required
             />
-            <label for="form__label form__email">Tu correo electrónico *</label>
+            <label for="form__email" class="form__label"
+              >Tu correo electrónico *</label
+            >
             <input
               class="form__input"
               type="email"
               id="form__email"
-              name="reserva"
+              name="reservation"
               placeholder="email@email.com"
               required
             />
-            <button type="submit">Reservar una mesa</button>
+          </fieldset>
+          <fieldset class="form__button">
+            <button class="form__submit__button">Reservar una mesa</button>
+          </fieldset>
+          <fieldset class="form__terms__checkbox__fieldset">
+            <label for="form__terms"
+              ><input
+                class="form__checkbox"
+                type="checkbox"
+                id="form__terms"
+                name="reservation"
+                required
+              />
+              Acepto los términos de uso</label
+            >
           </fieldset>
         </form>
       </section>
