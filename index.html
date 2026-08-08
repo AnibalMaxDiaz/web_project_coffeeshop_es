@@ -59,17 +59,17 @@
       </div>
     </header>
     <main class="content">
-      <section id="reservation">
+      <section id="reservation" class="reservation">
         <h2 class="form__title">Reservar una mesa</h2>
         <form
           class="form"
           action="https://formspree.io/f/mnqvydqv"
           method="POST"
         >
-          <fieldset class>
+          <fieldset class="form__fieldset">
             <label for="form__name" class="form__label">Nombre *</label>
             <input
-              class="form__input"
+              class="form__input form__input__text"
               type="text"
               id="form__name"
               name="reservation"
@@ -80,7 +80,7 @@
               >Número de comensales *</label
             >
             <input
-              class="form__input"
+              class="form__input form__input__number"
               type="number"
               id="form__guests"
               name="reservation"
@@ -91,7 +91,7 @@
             />
             <label for="form__date" class="form__label">Fecha y hora *</label>
             <input
-              class="form__input"
+              class="form__input form__input__datetime"
               type="datetime-local"
               id="form__date"
               name="reservation"
@@ -101,7 +101,7 @@
               >Tu correo electrónico *</label
             >
             <input
-              class="form__input"
+              class="form__input form__input__email"
               type="email"
               id="form__email"
               name="reservation"
@@ -113,7 +113,7 @@
             <button class="form__submit__button">Reservar una mesa</button>
           </fieldset>
           <fieldset class="form__terms__checkbox__fieldset">
-            <label for="form__terms"
+            <label for="form__terms" class="form__terms__checkbox__label"
               ><input
                 class="form__checkbox"
                 type="checkbox"
