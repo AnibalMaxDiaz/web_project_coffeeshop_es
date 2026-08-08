@@ -84,7 +84,7 @@ a {
 .info__text {
   margin-block: 0;
 }
-.reservation {
+.content {
   background-color: #ffd6c5;
   background-image: url("../images/background_reservation.svg");
   background-size: cover;
@@ -148,12 +148,15 @@ fieldset {
 }
 .form__title {
   margin-bottom: 80px;
+  margin-top: 0;
   font-family: "Inter";
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
 }
 .form__label {
+  /* display: block;
+  margin-bottom: 8px; */
   font-family: "Inter";
   font-size: 20px;
   line-height: 30px;
@@ -161,6 +164,8 @@ fieldset {
 .form__input {
   width: 100%;
   box-sizing: border-box;
+  margin-top: 8px;
+  padding: 15px 20px;
 }
 .form__submit__button {
   font-family: "Inter";
@@ -169,8 +174,13 @@ fieldset {
   line-height: 20px;
   background-color: #E96E3A;
   color: #fff;
+  height: 60px;
+  margin-bottom: 32px;
 }
 .form__terms__checkbox__label{
   display: flex;
   gap: 12px;
+}
+.footer {
+  background-color: #D35722;
 }
