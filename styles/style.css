@@ -42,6 +42,9 @@ a {
   text-decoration: none;
   color: #000;
 }
+.nav__link-tag:hover {
+  color: #FF976B;
+}
 .header__title {
   margin-top: 183px;
   margin-left: 80px;
@@ -177,6 +180,10 @@ fieldset {
   color: #fff;
   height: 60px;
   margin-bottom: 32px;
+  transition: opacity 0.5s ease;
+}
+.form__submit__button:hover {
+  opacity: 0.7;
 }
 .form__terms__checkbox__label {
   display: flex;
@@ -244,6 +251,10 @@ fieldset {
   font-family: “Inter”;
   font-size: 16px;
   line-height: 20px;
+  transition: color 0.3s ease;
+}
+.footer__media-text:hover {
+  color: #FFD6C5;
 }
 .design-by__text {
   margin-top: 108px;
